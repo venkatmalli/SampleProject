@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
     <flow name="sampleprojectFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/GitSample" doc:name="HTTP"/>
         <set-payload value="{&quot;message&quot;:&quot;Hello World&quot;}" doc:name="Set Payload"/>
+        <logger message="Test Message for Git" level="INFO" doc:name="Logger"/>
     </flow>
 </mule>
