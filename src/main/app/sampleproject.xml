@@ -11,5 +11,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
         <http:listener config-ref="HTTP_Listener_Configuration" path="/GitSample" doc:name="HTTP"/>
         <set-payload value="{&quot;message&quot;:&quot;Hello World&quot;}" doc:name="Set Payload"/>
         <logger message="Test Message for Git" level="INFO" doc:name="Logger"/>
+        <logger message="Test Messge2 with Logger" level="INFO" doc:name="Logger"/>
+        <logger message="Logger3 for Feature" level="INFO" doc:name="Logger"/>
     </flow>
 </mule>
